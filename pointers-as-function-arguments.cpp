@@ -2,6 +2,10 @@
 
 void incrementByOne(int* a){
 	
+	// everytime a function is called a stack frame is created for that function to run
+	// in this particular case where I am using recursion, a lot of stack frames are created for this
+	// one function
+	
 	*a = (*a) + 1;
 	printf("Address of variable a inside main: %d\n", a);
 	
