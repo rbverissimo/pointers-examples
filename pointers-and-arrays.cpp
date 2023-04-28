@@ -8,6 +8,17 @@ void readingEveryElement(int a[]){
 	printf("Value at a[2]: %d\n", *(a + 2));
 	printf("Value at a[3]: %d\n", *(a + 3));
 	printf("Value at a[4]: %d\n", *(a + 4));
+		
+}
+
+void iteratingOverArray(int array[], int size){
+	
+	// size it's a pass by value;
+	for(int i = 0; i < size; i++){
+		printf("Value at a[%d]: %d\n", i, *(array + i));
+	}
+	
+	printf("\n");
 	
 }
 
@@ -25,6 +36,10 @@ int main(){
 	if(numbersArraySize == 5){
 		readingEveryElement(numbers);
 	}
+	
+	printf("\n\n\n");
+	
+	iteratingOverArray(numbers, numbersArraySize);
 	
 	return 0;
 }
