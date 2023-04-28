@@ -23,6 +23,11 @@ int main() {
 	
 	printf("Value at &p: %d\n", &p);
 	printf("Value at *q: %d\n", *q);
+	printf("Value at q: %d\n", q);
+	printf("\n\n The value that q stores is the address of p");
+	printf("Value at r does the same thing: %d\n but for q", r);
+	
+	printf("Dereferencing r: %d\n", ***r);
 
 
 	return 0;
